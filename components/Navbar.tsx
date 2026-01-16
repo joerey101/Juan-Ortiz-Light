@@ -82,19 +82,19 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 absolute w-full left-0 animate-fade-in px-4 pt-2 pb-6 shadow-xl">
+                <div className="md:hidden bg-white border-t border-slate-200 absolute w-full left-0 animate-fade-in px-4 pt-2 pb-6 shadow-xl">
                     <div className="space-y-1">
                         {["Sobre Mí", "Coaching", "Consultoría", "Podcast"].map((item) => (
                             <Link
                                 key={item}
                                 href="#"
-                                className="block px-3 py-4 text-base font-display uppercase font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md transition-colors"
+                                className="block px-3 py-4 text-base font-display uppercase font-medium text-slate-600 hover:text-primary hover:bg-slate-50 rounded-md transition-colors"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 {item}
                             </Link>
                         ))}
-                        <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+                        <div className="mt-4 pt-4 border-t border-slate-200">
                             <Link
                                 href="#"
                                 onClick={() => setIsMobileMenuOpen(false)}
