@@ -9,7 +9,7 @@ import { Music } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-white py-12 border-t border-slate-200 dark:border-white/10 transition-colors duration-300">
+        <footer className="bg-slate-100 text-slate-600 py-12 border-t border-slate-200 transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
 
@@ -17,7 +17,7 @@ export default function Footer() {
                     <div className="col-span-1 md:col-span-2">
                         <Link
                             href="/"
-                            className="text-3xl font-bold font-display tracking-tight text-slate-900 dark:text-white uppercase block mb-6"
+                            className="text-3xl font-bold font-display tracking-tight text-slate-900 uppercase block mb-6"
                         >
                             JM<span className="text-primary">.</span>Ortiz
                         </Link>
@@ -31,10 +31,10 @@ export default function Footer() {
                         <h4 className="font-display font-bold uppercase tracking-widest text-sm mb-6 text-primary">
                             Navegación
                         </h4>
-                        <ul className="space-y-4 text-sm text-slate-400">
+                        <ul className="space-y-4 text-sm text-slate-500">
                             {["Home", "Sobre Mí", "Servicios Corporativos", "Mentoria 1:1"].map((item) => (
                                 <li key={item}>
-                                    <Link href="#" className="hover:text-white transition-colors">
+                                    <Link href="#" className="hover:text-primary transition-colors">
                                         {item}
                                     </Link>
                                 </li>
@@ -47,24 +47,24 @@ export default function Footer() {
                         <h4 className="font-display font-bold uppercase tracking-widest text-sm mb-6 text-primary">
                             Conecta
                         </h4>
-                        <ul className="space-y-4 text-sm text-slate-400">
+                        <ul className="space-y-4 text-sm text-slate-500">
                             <li>
-                                <Link href="#" className="hover:text-white transition-colors flex items-center">
+                                <Link href="#" className="hover:text-primary transition-colors flex items-center">
                                     <Linkedin className="w-4 h-4 mr-2 text-blue-500" /> LinkedIn
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:text-white transition-colors flex items-center">
+                                <Link href="#" className="hover:text-primary transition-colors flex items-center">
                                     <Instagram className="w-4 h-4 mr-2 text-pink-500" /> Instagram
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:text-white transition-colors flex items-center">
+                                <Link href="#" className="hover:text-primary transition-colors flex items-center">
                                     <Youtube className="w-4 h-4 mr-2 text-red-500" /> YouTube
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:text-white transition-colors flex items-center">
+                                <Link href="#" className="hover:text-primary transition-colors flex items-center">
                                     <Music className="w-4 h-4 mr-2 text-green-500" /> Spotify
                                 </Link>
                             </li>
@@ -72,11 +72,11 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 uppercase tracking-widest">
+                <div className="border-t border-slate-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 uppercase tracking-widest">
                     <p>© 2024 Juan Martín Ortiz. Todos los derechos reservados.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <Link href="#" className="hover:text-white">Privacidad</Link>
-                        <Link href="#" className="hover:text-white">Términos</Link>
+                        <Link href="#" className="hover:text-primary">Privacidad</Link>
+                        <Link href="#" className="hover:text-primary">Términos</Link>
                     </div>
                 </div>
             </div>

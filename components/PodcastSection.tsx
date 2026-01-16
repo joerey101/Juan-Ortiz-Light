@@ -3,7 +3,7 @@ import { PlayCircle, Cast, Youtube } from "lucide-react";
 
 export default function PodcastSection() {
     return (
-        <section className="py-24 bg-slate-100 dark:bg-black border-t border-slate-200 dark:border-white/10 relative overflow-hidden transition-colors duration-300">
+        <section className="py-24 bg-white border-t border-slate-200 relative overflow-hidden transition-colors duration-300">
             {/* Texture Background */}
             <div
                 className="absolute inset-0 opacity-5 pointer-events-none"
@@ -15,7 +15,7 @@ export default function PodcastSection() {
 
                     {/* Image */}
                     <div className="lg:w-1/2">
-                        <div className="relative rounded-lg overflow-hidden shadow-2xl border border-white/10 group cursor-pointer">
+                        <div className="relative rounded-lg overflow-hidden shadow-2xl border border-slate-200 group cursor-pointer">
                             <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all z-10"></div>
                             <div className="relative w-full aspect-video">
                                 <Image
@@ -34,25 +34,25 @@ export default function PodcastSection() {
                     </div>
 
                     {/* Content */}
-                    <div className="lg:w-1/2 text-slate-900 dark:text-white">
+                    <div className="lg:w-1/2 text-slate-900">
                         <span className="text-primary font-display font-bold tracking-widest uppercase text-sm mb-2 block">
                             Nuevo Episodio
                         </span>
                         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 uppercase leading-none">
                             El Algoritmo <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600 dark:from-orange-400 dark:to-red-500">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600">
                                 Del Líder Consciente
                             </span>
                         </h2>
-                        <p className="font-body text-slate-600 dark:text-slate-300 text-lg mb-8 font-light border-l-2 border-primary pl-6">
+                        <p className="font-body text-slate-600 text-lg mb-8 font-light border-l-2 border-primary pl-6">
                             Exploramos cómo la inteligencia emocional y los datos duros convergen para crear las empresas del futuro. Invitado especial: CEO de TechFuture.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="bg-slate-900 dark:bg-white text-white dark:text-black font-display uppercase font-bold text-sm tracking-widest px-8 py-3 hover:bg-slate-700 dark:hover:bg-gray-200 transition-colors flex items-center justify-center">
+                            <button className="bg-slate-900 text-white font-display uppercase font-bold text-sm tracking-widest px-8 py-3 hover:bg-slate-700 transition-colors flex items-center justify-center">
                                 <Youtube className="mr-2 text-red-600 w-5 h-5" /> Ver en YouTube
                             </button>
-                            <button className="border border-slate-300 dark:border-white/30 text-slate-700 dark:text-white font-display uppercase font-bold text-sm tracking-widest px-8 py-3 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors flex items-center justify-center">
-                                <Cast className="mr-2 text-green-600 dark:text-green-500 w-5 h-5" /> Escuchar en Spotify
+                            <button className="border border-slate-300 text-slate-700 font-display uppercase font-bold text-sm tracking-widest px-8 py-3 hover:bg-slate-200 transition-colors flex items-center justify-center">
+                                <Cast className="mr-2 text-green-600 w-5 h-5" /> Escuchar en Spotify
                             </button>
                         </div>
                     </div>
