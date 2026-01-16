@@ -27,11 +27,7 @@
   /* slate-900 */
 }
 
-.dark {
-  /* Dark Mode Defaults */
-  --background: #0B1120;
-  --foreground: #f1f5f9;
-}
+
 
 body {
   background-color: var(--background);

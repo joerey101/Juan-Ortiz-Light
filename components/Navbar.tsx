@@ -20,7 +20,7 @@ export default function Navbar() {
     return (
         <nav
             className={`sticky top-0 z-50 w-full transition-all duration-300 border-b ${isScrolled
-                ? "bg-white/80 dark:bg-background-dark/95 border-slate-200 dark:border-slate-800 backdrop-blur-md shadow-lg"
+                ? "bg-white/80 border-slate-200 backdrop-blur-md shadow-lg"
                 : "bg-transparent border-transparent py-4"
                 }`}
         >
@@ -30,7 +30,7 @@ export default function Navbar() {
                     <div className="flex-shrink-0 flex items-center">
                         <Link
                             href="/"
-                            className="text-2xl font-bold font-display tracking-tight text-slate-900 dark:text-white uppercase"
+                            className="text-2xl font-bold font-display tracking-tight text-slate-900 uppercase"
                         >
                             JM<span className="text-primary">.</span>Ortiz
                         </Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
                             <Link
                                 key={item}
                                 href="#"
-                                className="font-display uppercase tracking-wider text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                                className="font-display uppercase tracking-wider text-sm font-medium text-slate-600 hover:text-primary transition-colors"
                             >
                                 {item}
                             </Link>

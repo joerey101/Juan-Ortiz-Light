@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
     return (
-        <header className="relative overflow-hidden bg-slate-50 dark:bg-background-dark min-h-[90vh] flex items-center pt-20">
+        <header className="relative overflow-hidden bg-slate-50 min-h-[90vh] flex items-center pt-20">
             {/* Background Gradients */}
-            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-slate-200 dark:from-slate-900 to-transparent opacity-30 z-0 pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-slate-200 to-transparent opacity-30 z-0 pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -20,29 +20,29 @@ export default function Hero() {
                             </p>
                         </div>
 
-                        <h1 className="font-display font-bold text-6xl md:text-7xl lg:text-8xl leading-[0.9] text-slate-900 dark:text-white uppercase tracking-tighter">
+                        <h1 className="font-display font-bold text-6xl md:text-7xl lg:text-8xl leading-[0.9] text-slate-900 uppercase tracking-tighter">
                             Ingeniería <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-slate-800 dark:from-slate-400 dark:to-slate-600">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-slate-800">
                                 de la
                             </span>{" "}
                             <br />
                             Consciencia
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 font-light max-w-lg italic border-l border-slate-300 dark:border-slate-700 pl-6 py-2">
+                        <p className="text-xl md:text-2xl text-slate-600 font-light max-w-lg italic border-l border-slate-300 pl-6 py-2">
                             Transformando líderes desde la precisión del proceso y la profundidad del ser.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
                             <Link
                                 href="#"
-                                className="inline-flex justify-center items-center bg-transparent border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white font-display uppercase font-bold text-sm tracking-widest px-8 py-4 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-background-dark transition-all duration-300"
+                                className="inline-flex justify-center items-center bg-transparent border-2 border-slate-900 text-slate-900 font-display uppercase font-bold text-sm tracking-widest px-8 py-4 hover:bg-slate-900 hover:text-white transition-all duration-300"
                             >
                                 Explorar Método
                             </Link>
                             <Link
                                 href="#"
-                                className="inline-flex justify-center items-center text-slate-600 dark:text-slate-300 font-display uppercase font-bold text-sm tracking-widest px-8 py-4 hover:text-primary transition-colors group"
+                                className="inline-flex justify-center items-center text-slate-600 font-display uppercase font-bold text-sm tracking-widest px-8 py-4 hover:text-primary transition-colors group"
                             >
                                 <span className="border-b border-transparent group-hover:border-primary transition-all">
                                     Ver Casos de Éxito
