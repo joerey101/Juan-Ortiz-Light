@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Search, Menu, X } from "lucide-react";
-import { ThemeToggle } from "@/components/ThemeToggle";
+
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -51,7 +51,7 @@ export default function Navbar() {
 
                     {/* Desktop Actions */}
                     <div className="hidden md:flex items-center space-x-4">
-                        <ThemeToggle />
+
                         <button className="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">
                             <Search className="w-5 h-5" />
                         </button>
@@ -65,7 +65,7 @@ export default function Navbar() {
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center gap-4">
-                        <ThemeToggle />
+
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                             className="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-white"
